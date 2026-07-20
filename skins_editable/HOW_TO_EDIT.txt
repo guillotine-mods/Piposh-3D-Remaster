@@ -1,0 +1,14 @@
+HOW TO REPLACE A MODEL TEXTURE WITH YOUR OWN DRAWING
+====================================================
+
+Almost every .MDL in MDL\ has been AI-upscaled to 2x (565 colour).
+Originals are in _backup_mdl\. Editable PNGs are in skins_editable\<Name>\.
+
+  tools\extract-skins.bat <Name>
+  tools\import-skins.bat <Name>
+  python tools\batch_upscale_all.py     <- re-run AI 2x on anything not yet done
+
+Keep the UV layout. All skins of one model must share one size.
+
+Left as original (terrain / MDL4, not character skins):
+  Desert.MDL, Terrain.MDL, Mount.MDL, MapMount.mdl, Hezi4.MDL

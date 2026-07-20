@@ -1,0 +1,44 @@
+# Temp / diagnostics
+acklog.txt
+_launch_log.txt
+_batch*.txt
+_tmp*/
+_tmp_*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local editor
+.vscode/
+.idea/
+*.swp
+
+# Scratch probes
+_t/
+_t_*.png
+_mdlx.py
+_probe*.py
+_uvcheck.py
+_remain.py
+_inv.py
+_ds.py
+
+# Runtime / local saves (not part of the remaster source)
+Game.*
+Game.tmp
+Game.num
+Save*.SAV
+SShot*.pcx
+Flags.dat
+Movie.dat
+Run.txt
+Last.dat
+Arrive.dat
+Depart.dat
+Results*.dat
+Quick.lev
+Stage.*
+Desc.*
+_Data/

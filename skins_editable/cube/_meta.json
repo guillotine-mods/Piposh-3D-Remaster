@@ -1,0 +1,15 @@
+{
+  "format": "MDL5",
+  "numskins": 6,
+  "skin_w": 32,
+  "skin_h": 32,
+  "numverts": 8,
+  "src_types": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "format": "IDPO",
+  "numskins": 7,
+  "skin_w": 500,
+  "skin_h": 150,
+  "numverts": 649,
+  "src_types": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ]
+}

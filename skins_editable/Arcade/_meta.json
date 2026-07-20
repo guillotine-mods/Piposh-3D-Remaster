@@ -1,0 +1,14 @@
+{
+  "format": "MDL3",
+  "numskins": 5,
+  "skin_w": 320,
+  "skin_h": 200,
+  "numverts": 420,
+  "src_types": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ]
+}

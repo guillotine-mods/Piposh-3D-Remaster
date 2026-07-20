@@ -1,0 +1,369 @@
+* common errors *
+ERRNO_MEMALLOC			@0004DEP..."SYSERR: Could not allocate %d bytes"
+ERRNO_PUT_STRING		@0010DT...."%s"
+
+
+* wrmain *
+ERRNO_SECOND_RUN		@0006DE...."Only one engine can run at a time!"
+ERRNO_MAINWININIT_FAIL		@0002DE...."Could not create the WindowProc"
+ERRNO_USER_BREAK		@0001DE...."- User Abort"
+APPINITERR_SYNTAXERROR_WDL	@0356DE...."Problem with script"
+APPINITERR_LOAD_WDF 		@0346DIB..."Configuration error"
+APPINITERR_WDF_SIZE		@0340DEAP.."<invalid file size (%d)>"
+APPINITERR_SIGNATURE		@0341DEA..."Signature not found"
+APPINITERR_VERSION		@0342DEAP.."Bad version (%d)"
+APPINITERR_CHECKSUMME		@0343DEA..."File corrupt"
+APPINITERR_WDF_NOTFOUND		@0344DIB..."WDF File not found.
+Please wait for start (OK)
+or abort execution (Break)"
+APPINITERR_CALL_PROCESS		@0350DIT..."Not found:
+<%s>"
+ERRNO_INVALID_COMLINE		@0011DIA..."Invalid arguments"
+
+
+* multimedia *
+MMERR_SY_ERROR			@0217......"<unspecified error>"
+MMERR_SY_BADDEVICEID		@0218......"<device ID out of range>"
+MMERR_SY_NOTENABLED		@0219......"<driver failed enable>"
+MMERR_SY_ALLOCATED		@0220......"<device already allocated>"
+MMERR_SY_INVALHANDLE		@0221......"<device handle is invalid>"
+MMERR_SY_NODRIVER		@0222......"<no device driver present>"
+MMERR_SY_NOMEM			@0223......"<memory allocation error>"
+MMERR_SY_NOTSUPPORTED		@0224......"<function isn't supported>"
+MMERR_SY_BADERRNUM		@0225......"<error value out of range>"
+MMERR_SY_INVALFLAG		@0226......"<invalid flag passed>"
+MMERR_SY_INVALPARAM		@0227......"<invalid parameter passed>"
+MMERR_SY_HANDLEBUSY		@0228......"<handle being used>"
+
+* mixer *
+MMERR_MX_NOTFOUND		@0202DE...."AUDIOMIXERERR: No Audio Mixer devices found"
+MMERR_MX_OPENFAIL		@0203DE.X.."AUDIOMIXERERR: Unable to open Audio Mixer device"
+MMERR_MX_INITFAIL		@0204DE.X.."AUDIOMIXERERR: Audio Mixer initialize failed"
+MMERR_MX_INVALLINE		@0229......"<invalid line>"
+MMERR_MX_INVALCONTROL		@0230......"<invalid control>"
+MMERR_MX_INVALVALUE		@0231......"<invalid value>"
+
+* sound *
+DSERR_NOTINITIALIZED		@0069DE...."Direct Sound Object not initialized"
+DSERR_CREATE_ERR		@0070DEX..."Direct Sound Shutdown - Sound used by another application!"
+DSERR_SET_PRIORITY_LEVEL_ERR	@0071DEX..."DIRECTSOUNDERR: Unable to set the the priority level"
+DSERR_CREATE_SOUND_BUFFER_ERR	@0072DEAX.."DIRECTSOUNDERR: Unable to create the sound buffer"
+DSERR_LOCK_SOUND_BUFFER_ERR	@0073DEX..."DIRECTSOUNDERR: Unable to lock the sound buffer"
+DSERR_UNLOCK_SOUND_BUFFER_ERR	@0074DEX..."DIRECTSOUNDERR: Unable to unlock the sound buffer"
+DSERR_CREATE_PRIMARYSOUNDBUFFER	@0078DEX..."DIRECTSOUNDERR: Unable to create the primary sound buffer"
+DSERR_PLAY_PRIMARYSOUNDBUFFER	@0079DEX..."DIRECTSOUNDERR: Unable to play the primary sound buffer"
+LFERR_LOADING_WAV		@0106DE...."DIRECTSOUNDERR: Could not load WAV file"
+
+* midi *
+MIDIERR_NOTINITIALIZED			@0048DE...."MIDIOUTERR: MIDI-Out device not initialized"
+MIDIERR_OPENFAIL					@0049DEM..."MIDIOUTERR: Unable to open MIDI device"
+MIDIERR_NODEVICES_PRESENT 	@0050DI...."No MIDI-Out devices found"
+MIDIERR_PLAYFAIL	  	@0051DIM..."Unable to play MIDI"
+MIDIERR_STREAMOPENFAIL	  	@0052DIM..."Unable to open MIDI stream"
+LFERR_LOADING_MID	  	@0107DI...."Could not load MIDI file"
+
+* dinput *
+DIERR_DINPUTNOTINITIALIZED	@0154DEW..."DIRECTINPUTERR: Direct Input Object not initialized"
+DIERR_DINPUTCREATEFAIL	  	@0155DEW..."DIRECTINPUTERR: Unable to create the Direct Input object"
+DIERR_CREATEMOUSEFAIL	  	@0156DEW..."DIRECTINPUTERR: Unable to create the Direct Mouse object"
+DIERR_CREATEMOUSECLEVELFAIL	@0158DEW..."DIRECTINPUTERR: Unable to set priority level"
+DIERR_ACQUIRE_MOUSE	  	@0159DEW..."DIRECTINPUTERR: Unable to open the Direct Mouse object"
+
+* load file *
+LFERR_FILE_NOTFOUND		@0110DET..."File %s not found"
+LFERR_NOT_SUPPORTED	 	@0099DEP..."File format not supported (%02X)"
+LFERR_FILE_SIZE	   		@0108DE...."<invalid file size>"
+LFERR_CHECKSUMME   		@0109DE...."<checksumme>"
+LFERR_DATA_MISSING 		@0100DEP..."File corrupt"
+LFERR_FILE_CORRUPT 		@0104DEP..."File corrupt at pos. %02X"
+LFERR_SIGNATURE_NOT_FOUND	@0101DEP..."File corrupt at pos. %02X"
+
+
+* direct draw *
+DDRAWERR_NOTINITIALIZED		@0017DE...."Direct Draw object not initialized"
+DDRAWERR_CREATE_ERR		@0018DEW..."Cannot setup video mode: DirectX 5.0 or above required"
+DDRAWERR_INITVIDEO		@0027DE...."Video mode initialisation failed"
+DDRAWERR_SET_VIDEOMODE		@0020DEW..."Could not set display mode"
+DDRAWERR_SET_PRIORITY_LEVEL	@0021DEW..."DIRECTDRAWERR: Could not set cooperative level"
+DDRAWERR_CREATE_PRIM_SURFACE	@0022DEW..."Can't allocate video memory"
+DDRAWERR_GET_ATTACHED_SURFACE	@0023DEW..."DIRECTDRAWERR: Could not create the back screen surface"
+DDRAWERR_CREATE_OFFSCREENSURFACE	@0024DEW..."DIRECTDRAWERR: Could not create the off screen surface"
+DDRAWERR_CREATE_CLIPPER		@0032DEW..."DIRECTDRAWERR: Could not create the clipper surface"
+DDRAWERR_SET_CLIPPER		@0033DEW...
+DDRAWERR_SET_CLIPPERTOWIN	@0034DEW..."DIRECTDRAWERR: Could not initialize the clipper surface"
+DDRAWERR_LOCK_ERROR		@0031DEW..."DIRECTDRAWERR: Could not lock a surface"
+DDRAWERR_CREATE_PAL		@0026DEW..."DIRECTDRAWERR: Could not create Palette"
+DDRAWERR_SET_PAL		@0027DS...."DIRECTDRAWERR: Unable to set palette entry"
+<!> kritischer fehler, (A)bort execution;
+DDRAWERR_CREATE_FB		@0029DE..A."DIRECTDRAWERR: Unable to create the frame buffer"
+
+* timer *
+MMERR_TM_OPENFAIL		@0206DEZ..."TIMERERR: Unable to initialize the Multi Media Timer"
+MMERR_TM_SETEVENTFAIL		@0207DI...."TIMERERR: could not set the callback procedure"
+MMERR_TM_NOTINITIALIZED		@0205DI...."Timer not initialized"
+
+* stereo scopic *
+SSCERR_UNKNOWNDEVICE		@0232DI...."Unknown 3D Video Device"
+SSCERR_LOADDRV_ERROR		@0233DI...."Unable to load 3D Video Driver"
+SSCERR_VIDEOMODE_NOT_SUPPORTED	@0234DI...."Current Video Mode not supported"
+SSCERR_TIMER_NOTINITIALIZED	@0235DI...."Timer not initialized"
+SSCERR_SETCALLBACK_ERROR	@0237DI...."Could not set the callback procedure"
+SSCERR_INITSSC_FAIL		@0239DI...."3DVIDEOERR: Unable to initialize the 3D Video Mode"
+
+* CD Audio *
+MMERR_OPEN_CDAUDIO		@0211DECS.."CDAUDIOERR: Unable to open CD-Audio device"
+MMERR_PLAY_CDAUDIO		@0212DEC..."CDAUDIOERR: ErrNo #212"
+MMERR_STOP_CDAUDIO		@0213DEC..."CDAUDIOERR: ErrNo #213"
+MMERR_RESUME_CDAUDIO		@0214DEC..."CDAUDIOERR: ErrNo #214"
+
+APPINITERR_PATCH_COMM           @0351DE...."Corrupted engine (possible virus!)"
+APPINITERR_PATCH_NOTFOUND       @0352DE...."Patch not found"
+APPINITERR_PATCH_CHECKSUM       @0353DEP..."#%X"
+APPINITERR_PATCH_OPENRTM        @0354DET..."Unable to open <%s>"
+APPINITERR_PATCH_LOADRTM        @0357DE...."Unable to load RTM"
+
+
+* Direct Play Messages *
+
+
+@0465DS...."\nSearch for Servers.. "     DPMSG_STARTINITIALIZE
+@0466DS.P.."\n%d  Servers found "        DPMSG_INITIALIZED
+@0467DS.T.."\n  <%s> "                    DPMSG_SERVERFOUND
+@0468DS.P.."\n%d Modems found "          DPMSG_MODEMS
+@0469DS.T.."\n  <%s> "                    DPMSG_MODEMFOUND
+@0470DS.T.."\n%s activated (Host) "        DPMSG_HOSTOPENED
+@0471DS.P.."\nPlayer Id: <%d> "            DPMSG_HOST_PLAYERID
+@0472DS.T.."\n  %s"                             DPMSG_SESSIONFOUND,  //472  // parameter: %s, session name
+@0473DS.T.."\nSession  <%s> selected "          DPMSG_SESSIONSELECTED,  //473  // parameter: %s, session name
+@0474DS.T.."\n%s activated (Join) "             DPMSG_SESSION_JOIN,    //474  // parameter: %s, server name
+@0475DS.T.."\nPlayer Name <%s> "   "Player Id <%d>"     DPMSG_CONTRAPLAYER, 475, parameter: %s, Contra-Player Name bzw. %d Player Id
+@0476DS.T.."\n%s >> Search for Sessions "       DPMSG_SEARCHFORSESSION,      //476
+
+@0477DI.T.."%s has joined"      "%d has joined" DPMSG_PLAYER_JOINED, 477, parameter: %s, Player Name bzw. %d Player Id
+@0478DI.T.."%s has left"        "%d has left"   DPMSG_PLAYER_LEFT, 478, parameter: %s, Player Name bzw. %d Player Id
+@0479DI...."You have become the host"           DPMSG_BECOME_THE_HOST,              //479
+
+
+
+* Direct Play Errors  (1) *
+
+@0481DS...."\nDirect Play initailize fail"  DPXERR_INITIALIZEFAIL,          // 481
+@0482DS...."\nDP Init, ARG-Error"           DPXERR_ARGUMENT_ERROR,           // 482        event parameter (int. code)
+@0483DS...."\nObject not Initialized"       DPXERR_NOTINITIALIZED,           // 483
+@0484DS...."\nServer not found"             DPXERR_SERVER_NOTFOUND,         // 484
+@0485DS...."\nUndefined Error"              DPXERR_UNDEFERROR,              // 485
+@0486DS.T.."\n%s - Open failed (Host)"      DPXERR_HOST_OPENFAIL,             // 486 parameter: <server name>
+@0487DS.T.."\n%s - Open failed (Join)"      DPXERR_SESSION_OPENFAIL,          // 487 parameter: <server name>
+@0488DS.T.."\n%s - New Session"             DPXERR_SESSION_NOTFOUND,          // 488 parameter: <server name>. Kein error, die session ist aber nicht gefunden
+
+@0489DEB..."Error in argument line: \nServer undefined"      DPXERR_SERVERTYP_NOTDEFINED,      // 489 Fehler in der Arg-Line
+@0490DEB..."Error in argument line: \nBad server"          DPXERR_BAD_SERVERDEF,         // 490
+@0491DEBP.."Error in argument line: \nBad Com Port (%d)"    DPXERR_BAD_COMPORT,         // 491
+
+
+* Direct Play Errors (2)     DPERR_ to DPXERR_ converter
+
+@0494DS...."DPERR_ALREADYINITIALIZED"
+@0495DS...."DPERR_ACCESSDENIED"
+@0496DS...."DPERR_ACTIVEPLAYERS"
+@0497DS...."DPERR_BUFFERTOOSMALL"
+@0498DS...."DPERR_CANTADDPLAYER"
+@0499DS...."DPERR_CANTCREATEGROUP"
+@0500DS...."DPERR_CANTCREATEPLAYER"
+@0501DS...."DPERR_CANTCREATESESSION"
+@0502DS...."DPERR_CAPSNOTAVAILABLEYET"
+@0503DS...."DPERR_EXCEPTION"
+@0504DS...."DPERR_GENERIC"
+@0505DS...."DPERR_INVALIDFLAGS"
+@0506DS...."DPERR_INVALIDOBJECT"
+@0507DS...."DPERR_INVALIDPARAM"
+@0508DS...."DPERR_INVALIDPLAYER"
+@0509DS...."DPERR_INVALIDGROUP"
+@0510DS...."DPERR_NOCAPS"
+@0511DS...."DPERR_NOCONNECTION"
+@0512DS...."DPERR_NOMEMORY"
+@0513DS...."DPERR_NOMESSAGES"
+@0514DS...."DPERR_NONAMESERVERFOUND"
+@0515DS...."DPERR_NOPLAYERS"
+@0516DS...."DPERR_NOSESSIONS"
+@0517DS...."DPERR_PENDING"
+@0518DS...."DPERR_SENDTOOBIG"
+@0519DS...."DPERR_TIMEOUT"
+DPERR_UNAVAILABLE	@0520DS...."Can't access DirectPlay network"
+@0521DS...."DPERR_UNSUPPORTED"
+@0522DS...."DPERR_BUSY"
+DPERR_USERCANCEL	@0523DSA..."Cancelled by user"
+@0524DS...."DPERR_NOINTERFACE"
+@0525DS...."DPERR_CANNOTCREATESERVER"
+@0526DS...."DPERR_PLAYERLOST"
+@0527DS...."DPERR_SESSIONLOST"
+@0528DS...."DPERR_UNINITIALIZED"
+@0529DS...."DPERR_NONEWPLAYERS"
+@0530DS...."DPERR_INVALIDPASSWORD"
+@0531DS...."DPERR_CONNECTING"
+@0532DS...."DPERR_BUFFERTOOLARGE"
+@0533DS...."DPERR_CANTCREATEPROCESS"
+@0534DS...."DPERR_APPNOTSTARTED"
+@0535DS...."DPERR_INVALIDINTERFACE"
+@0536DS...."DPERR_NOSERVICEPROVIDER"
+@0537DS...."DPERR_UNKNOWNAPPLICATION"
+@0538DS...."DPERR_NOTLOBBIED"
+@0539DS...."DPERR_SERVICEPROVIDERLOADED"
+@0540DS...."DPERR_ALREADYREGISTERED"
+@0541DS...."DPERR_NOTREGISTERED"
+@0542DS...."DPERR_AUTHENTICATIONFAILED"
+@0543DS...."DPERR_CANTLOADSSPI"
+@0544DS...."DPERR_ENCRYPTIONFAILED"
+@0545DS...."DPERR_SIGNFAILED"
+@0546DS...."DPERR_CANTLOADSECURITYPACKAGE"
+@0547DS...."DPERR_ENCRYPTIONNOTSUPPORTED"
+@0548DS...."DPERR_CANTLOADCAPI"
+@0549DS...."DPERR_NOTLOGGEDIN"
+@0550DS...."DPERR_LOGONDENIED"
+
+* DX Initialization *
+
+D3DERR_GENERAL		@2000DEAT...."D3D: %s"
+D3DERR_NOINTERFACE	@2001DEAW...."Can't create D3D interface"
+D3DERR_NODEVICE		@2002DEAP...."Can't create D3D device (%d)"
+D3DERR_NOVIEWPORT	@2003DEAW...."Can't create D3D viewport"
+D3DERR_BADCOLORDEPTH 	@2004DEAP...."D3D can't render into %d bit window"
+D3DERR_ENUMERATE	@2010DEAT...."DirectX Failure: %s"
+D3DERR_DIAGNOSTIC	@2020DIBT...."D3D Diagnostic: %s"
+
+DXPERR_NOSESSION	@2101DEAT...."DXP: Can't open session %s"
+
+* Starting ACKNEX *
+
+ACKERR_NOPAL 		@1001DEB....."Missing level palette (palette.lmp)!"
+ACKERR_NOMAP 		@1002DEB....."Missing shading table (colormap.lmp)!"
+ACKERR_NOXPAL 		@1003DEA....."Missing basic palette (palette.raw)!"
+ACKERR_NOMEM 		@1004DEAP...."Insufficient memory or disk space (%d MB required)!"
+ACKERR_PATCHWRS         @1005DEA....."Invalid level"
+
+
+* Loading WMB Levels *
+
+WMBERR_NOTFOUND		@1100DEAT...."<%s>: Can't open level"
+WMBERR_BADPOINTERS	@1101DEAT...."<%s>: Bad WMB format"
+WMBERR_SURFSIZE		@1102DEA....."Surface overrun!"
+WMBERR_BADMAPS		@1103DEAT...."<%s>: Bad colormaps"
+WMBERR_BADTEXSIZE	@1104DEAT...."<%s>: Invalid texture size"
+WMBERR_BADANIM		@1105DEAT...."<%s>: Bad texture animation"
+WMBERR_NOTEX		@1106DEAT...."<%s>: Texture memory overflow"
+WMBERR_TEXNOTPOW2	@1107DIBT...."<%s>: Texture size no power of 2"
+WMBERR_TEXTOOBIG	@1108DIBT...."<%s>: Texture too big for 3D card"
+WMBERR_NOPALETTE	@1109DIBT...."<%s>: Level contains no palette"
+
+BMPERR_BADPCX		@1111DEAT...."<%s>: Invalid PCX/BMP format"
+BMPERR_BADPCXSIZE	@1112DEAT...."<%s>: Invalid size"
+BMPERR_TOOBIG		@1113DEAT...."<%s>: Bitmap too big for 3D card"
+BMPERR_TEXTOOBIG	@1114DIBT...."<%s>: Sprite too big for 3D card"
+BMPERR_BADTGA		@1115DEAT...."<%s>: Bad TGA format (32 bit RLE only)"
+
+BSPERR_NOSTART		@1190DIB....."No player start found, placed to 0,0,0"
+WMBERR_NOSTART		@1191DIB....."No start position found, placed to 0,0,0"
+WMBERR_NOSTD		@1192DIBT...."<%s>: Not supported by this edition"
+
+MODERR_BADEXT		@1199DIBT...."<%s>: Unknown entity type"
+
+* Internal Errors *
+
+SYSERR_BADALLOC		@1201DEA....."NEXUS too small"
+SYSERR_BADBUFFER	@1203DEA....."NEXUS too small"
+SYSERR_POLYBUF		@1210DI......"NEXUS too small (polygon buffer)"
+SYSERR_VERTBUF		@1211DI......"NEXUS too small (vertex buffer)"
+
+SYSERR_GENERAL		@1220DEAT...."General error: %s"
+
+SYSERR_NOTEX		@1230DEAP...."Not enough video memory (%dK allocated)"
+SYSERR_NOMEM		@1231DEA....."Not enough memory or disk space free"
+
+SYSERR_NOMIXTAB		@1240DEA....."8 bit mode: no level palette for transparency"
+SYSERR_NOD3D		@1241DEA....."D3D device open failure"
+SYSERR_NOVIDMODE 	@1242DEA....."Video device open failure"
+SYSERR_NOFOGMAP		@1243DEA....."8 bit mode: no level palette for fog"
+SYSERR_WEAKD3D		@1244DIP....."3D card failure %d - try weak mode (-W3D)!"
+SYSERR_BADD3D		@1245DIP....."3D card internal failure %d!"
+
+
+SYSERR_TIMEOUT	 	@1299DEA....."Demo time expired. Order the full version at www.conitec.com!"
+
+* Loading Models *
+
+MDLERR_NOTFOUND		@1301DIBT...."<%s>: Can't open file"
+MDLERR_BADFORMAT	@1302DEAT...."<%s>: Bad MDL format"
+MDLERR_BADMINMAX	@1303DET....."<%s>: Bad MDL bounds"
+MDLERR_TOOBIG		@1304DIBT...."<%s>: Skin too big for 3D card"
+MDLERR_TOOBIGTRI	@1305DIBT...."<%s>: Triangle too big for 3D card"
+ENTERR_OVLREGS		@1306DIBT...."<%s>: Entity too big for this level"
+MDLERR_BADHMAP		@1307DEAT...."<%s>: Bad HMP format"
+
+ENTERR_BADSCALE		@1310DET....."<%s>: Bad scale value"
+ENTERR_NOACTION		@1320DBT....."<%s>: Action not found"
+ENTERR_NOMODEL		@1321DEA....."Entity name undefined (use <> brackets)"
+
+ENTERR_TOOMUCH		@1340DIAP...."More entities than MAX_ENTITIES (%d)"
+ENTERR_TOOMUCHTYPE	@1341DIAP...."Too much entity types"
+ENTERR_TOOMUCHVIS	@1342DIBP...."More than %d entities in sight range"
+
+SNDERR_NOTFOUND		@1351DIBT...."<%s>: Can't open file"
+SNDERR_NOTCREATED	@1352DIBT...."<%s>: Can't play - invalid format or unavailable device"
+SNDERR_TOOMUCHFILES 	@1353DIB....."Too much sound files playing (max. 8)"
+AVIERR_BADFORMAT	@1361DIBT...."<%s>: Not found or no valid AVI"
+
+* Communication *
+
+SLVERR_BADMSG		@1401DIBT...."Client/Server communication trouble - %s"
+SLVERR_OVFLOW		@1402DIB....."Client/Server buffer overflow"
+SLVERR_TOOMUCH		@1403DIB....."Too much clients"
+SLVERR_BADVERS		@1404DIB....."Incompatible engine versions"
+SLVERR_NOSERVER		@1405DIB....."Session already exists - can only join it as client"
+SLVERR_NOCLIENT		@1406DIB....."Session doesn't exist - can only open it as server"
+SLVERR_WRONGLEVEL	@1407DIBT...."Client joined wrong level %s"
+
+* Script Actions *
+
+WDLERR_BADSYN		@1501DIBT...."Empty pointer in %s!"
+WDLERR_BADLOOP		@1502DIBT...."Endless loop in %s!"
+WDLERR_OUTOFBOUNDS	@1503DIBT...."Invalid array index in %s!"
+WDLERR_NEGLOG		@1504DIBT...."Negative log argument in %s"
+WDLERR_NEGSQRT		@1505DIBT...."Negative square root argument in %s"
+WDLERR_TOOMUCHACT	@1506DIBT...."Too much actions - %s"
+WDLERR_DIVBY0		@1507DIBT...."Division by 0 in %s"
+WDLERR_LOADSAV		@1508DEAT...."Can't load from %s"
+WDLERR_MULTILOAD	@1509DIBT...."Avoid save/load in same frame - %s"
+WDLERR_LOADSAVI		@1510DIBT...."Can't load from %s"
+WDLERR_FORBIDDEN	@1511DIBT...."Dangerous instruction in event %s!"
+WDLERR_BADSTRING	@1512DIBT...."Empty string pointer in %s!"
+WDLERR_EXCEPTION	@1513DEBT...."Crash in %s;"
+WDLERR_NOHANDLE		@1514DEBT...."Invalid handle in %s!"
+WDLERR_BADPARAM		@1515DEBT...."Invalid instruction parameters in %s!"
+
+* DLL Interface *
+
+DLLERR_NOTFOUND		@1521DIBT...."Can't open %s"
+DLLERR_NOA5DLL		@1522DIBT...."%s - no valid A5 DLL"
+DLLERR_NOSUCHPROC	@1523DIBT...."%s not found in DLL"
+DLLERR_NEWERVERS	@1524DIBT...."%s - engine version too old for DLL"
+DLLERR_NOTAVAIL		@1525DIBT...."%s - object not available for DLL"
+DLLERR_NOSUCHFUNC	@1526DIBT...."%s - function not available for DLL"
+DLLERR_USER		@1527DIBT...."%s"
+
+
+A - Nach Ausgabe der Message soll das Programm unterbrochen werden.
+D - Display Message. Dieses Flag gilt für Prim. und Sec. Messages.
+I - Info Message.
+E - Error Message.
+B - DialogBox mit Abort Button
+P - Innerhalb des Textes befindet sich "%d"-Zeichen (Parameter)
+T - Innerhalb des Textes befindet sich "%s"-Zeichen (Text)
+    Gleichzeitig sind " %d " und " %s " nicht moeglich.
+S - Definiert STD-MsgOut als die Ausgabe-Device für die Message.
+    (Fuer Runtime, STD-MsgOut ist ein definiertes in START und END Window Text-Bereich. Default-MsgOut ist dabei eine DialogBox )
+R - Die Sekundär-Message wird nicht gesucht.
+M - Der Sekundär-Code ist ein MidiOut Error-Code. Dazugehörige Message 	wird über den Aufruf der midiOutGetErrorText geholt.
+X - Der Sekundär-Code ist ein Multi-Media-Error Code. geholt.
+W - Der Sekundär-Code ist ein DirectX Error-Code.
+Z - Der Sekundär-Code ist ein MM-Timer Error-Code.
+C - Der Sekundär-Code ist ein MCI Error-Code.
