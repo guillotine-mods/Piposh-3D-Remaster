@@ -112,7 +112,7 @@ Track these as the project grows; none of the 1.0.0 items above are claimed done
 - **WMB** level textures and most **GFX** 2D are not remastered yet.
 - A few terrain meshes (`MDL4` / `MDL2`) were left untouched.
 - Widescreen and a mode-select launcher are **future** work.
-
+- Fresh clones need the stock save-UI placeholders (`SShot1.pcx`–`SShot9.pcx`, `Desc.*`, `Stage.*`, etc.) — these are tracked in the repo.
 ---
 
 ## Restoring originals

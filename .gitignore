@@ -25,20 +25,11 @@ _remain.py
 _inv.py
 _ds.py
 
-# Runtime / local saves (not part of the remaster source)
+# Runtime / local saves (player progress — not stock game data)
 Game.*
 Game.tmp
 Game.num
 Save*.SAV
-SShot*.pcx
-Flags.dat
-Movie.dat
-Run.txt
-Last.dat
-Arrive.dat
-Depart.dat
-Results*.dat
-Quick.lev
-Stage.*
-Desc.*
+# Note: SShot*.pcx, Desc.*, Stage.*, Flags.dat, Movie.dat, Last.dat ARE required
+# stock placeholders for a fresh install (save UI BMPs + slot metadata). Track them.
 _Data/
